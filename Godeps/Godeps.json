@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/nkvoll/zkctl",
+	"GoVersion": "go1.3.3",
+	"Deps": []
+}
