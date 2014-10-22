@@ -1,5 +1,15 @@
 {
 	"ImportPath": "github.com/nkvoll/zkctl",
 	"GoVersion": "go1.3.3",
-	"Deps": []
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/cli",
+			"Comment": "1.2.0-26-gf7ebb76",
+			"Rev": "f7ebb761e83e21225d1d8954fde853bf8edd46c4"
+		},
+		{
+			"ImportPath": "github.com/samuel/go-zookeeper/zk",
+			"Rev": "9a466eec51e72221d972768a15f025bf096fc3e0"
+		}
+	]
 }
