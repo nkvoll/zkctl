@@ -14,6 +14,7 @@ func main() {
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{"zookeeper, z", "", "a ZooKeeper connection string", "ZOOKEEPER_SERVERS"},
+		cli.StringFlag{"format, f", "", "output format", "ZKCTL_OUTPUT_FORMAT"},
 	}
 
 	app.Commands = []cli.Command{

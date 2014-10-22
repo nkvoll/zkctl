@@ -56,6 +56,15 @@ func printStat(stat *zk.Stat) {
 	fmt.Println("Pzxid", stat.Pzxid)
 }
 
+func (c *Client) namespacedPath(path string) string {
+	path = ensureStartsWithSlash(path)
+	return ensureZooKeeperPath(c.namespace + path)
+}
+
+func ensureZooKeeperPath(s string) string {
+	return strings.TrimRight("/"+strings.TrimLeft(s, "/"), "/")
+}
+
 func ensureStartsWithSlash(s string) string {
 	if strings.HasPrefix(s, "/") {
 		return s
