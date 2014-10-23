@@ -14,8 +14,8 @@ func NewLsCommand() cli.Command {
 		Usage: "list a directory",
 
 		Flags: []cli.Flag{
-			cli.BoolFlag{"recursive, r", "false", "list directories recursively"},
-			cli.BoolFlag{"stat, s", "false", "show ZooKeeper stat"},
+			cli.BoolFlag{Name: "recursive, r", Usage: "list directories recursively"},
+			cli.BoolFlag{Name: "stat, s", Usage: "show ZooKeeper stat"},
 		},
 
 		Action: func(c *cli.Context) {

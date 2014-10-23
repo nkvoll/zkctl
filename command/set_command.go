@@ -13,7 +13,7 @@ func NewSetCommand() cli.Command {
 		Usage: "set the contents of a node",
 
 		Flags: []cli.Flag{
-			cli.IntFlag{"version, v", -1, "version to overwrite", ""},
+			cli.IntFlag{Name: "version, v", Value: -1, Usage: "version to overwrite"},
 		},
 
 		Action: func(c *cli.Context) {

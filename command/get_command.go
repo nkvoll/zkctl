@@ -13,8 +13,8 @@ func NewGetCommand() cli.Command {
 		Usage: "get the contents of a node",
 
 		Flags: []cli.Flag{
-			cli.BoolFlag{"stat, s", "false", "show ZooKeeper stat"},
-			cli.BoolFlag{"data-json, dj", "false", "decode data as json"},
+			cli.BoolFlag{Name: "stat, s", Usage: "show ZooKeeper stat"},
+			cli.BoolFlag{Name: "data-json, dj", Usage: "decode data as json"},
 		},
 
 		Action: func(c *cli.Context) {
